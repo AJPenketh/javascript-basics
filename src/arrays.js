@@ -25,22 +25,30 @@ const addToArray2 = (element, array) => {
 
 const removeNthElement = (index, array) => {
   // your code here
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
   // your code here
+  return numbers.toString().split(',');
 };
 
 const uppercaseWordsInArray = strings => {
   // your code here
+  const toUpperCase = strings.map(element => element.toUpperCase());
+  return toUpperCase;
 };
 
 const reverseWordsInArray = strings => {
   // your code here
+  const reverseWords =  strings.map(element => element.split('').reverse().join(''));
+  return reverseWords;
 };
 
 const onlyEven = numbers => {
   // your code here
+  const evenNumbers = numbers.filter(number => number % 2 == 0);
+  return evenNumbers;
 };
 
 const removeNthElement2 = (index, array) => {
